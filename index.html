@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paysaf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="home">
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">
+                <div class="header__logo-img"></div>
+                <a href="#home" class="header__logo-link">Paysaf</a>
+            </div>
+            <nav class="header__navbar">
+                <ul class="header__navbar-items">
+                    <li class="header__navbar-item"><a href="#home" class="header__navbar-link">Home</a> </li>
+                    <li class="header__navbar-item"> <a href="#teams" class="header__navbar-link">Teams</a> </li>
+                    <li class="header__navbar-item"><a href="#contacts" class="header__navbar-link">Contacts</a> </li>
+                    <li class="header__navbar-item"><a href="#tariffs" class="header__navbar-link">Prices</a></li>
+                    <li class="header__navbar-item"><a href="#contacts" class="header__navbar-link">Contacts</a> </li>
+                </ul>
+            </nav>
+            <button class="btn header__btn-registration"> Sign up</button>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="container indent">
+                <div class="banner__group-heading">
+                    <h1 class="banner__heading">Officia <span class="banner__heading_span"> amet </span>laboriosam
+                        deleniti obcaecati</h1>
+                    <img class="banner__heading-star banner__heading-star_small" src="./img/star.svg"
+                        alt="Officia amet laboriosam deleniti obcaecati" loading="lazy">
+                    <img class="banner__heading-star banner__heading-star_big" src="./img/star.svg"
+                        alt="Officia amet laboriosam deleniti obcaecati" loading="lazy">
+                </div>
+                <p class="banner__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                    dignissimos rerum tempore. Voluptatum maiores harum, pariatur
+                    est ut quae ratione ipsum dolorum necessitatibus cum laborum esse
+                    expedita?
+                </p>
+                <a href="#popup" class="btn banner__btn">Сonnect with us</a>
+                <div id="popup" class="popup">
+                    <a href="#" class="popup__bg"></a>
+                    <div class="popup__content">
+                        <h3 class="popup__heading">Labore assumenda</h3>
+                        <form class="popup__form">
+                            <div class="row-form">
+                                <div class="form-col-100">
+                                    <label for="name" class="popup__text">Your name</label>
+                                    <input type="text" id="name" placeholder="Petr" class="popup__input" required
+                                        minlength="2">
+                                </div>
+                                <div class="form-col-100">
+                                    <label for="tel" class="popup__text">Your phone</label>
+                                    <input type="tel" id="tel" placeholder="+7-(987)-654-32-10" class="popup__input"
+                                        required>
+                                </div>
+                                <div class="form-col-100">
+                                    <label class="popup__text">Which Messenger will contact you?</label>
+                                    <div class="popup__inputs-radio">
+                                        <input type="radio" name="connection" id="telegram" checked>
+                                        <label for="telegram" class="popup__label-radio">Telegram</label>
+                                        <input type="radio" name="connection" id="whatsApp">
+                                        <label for="whatsApp" class="popup__label-radio">WhatsApp</label>
+                                    </div>
+                                </div>
+                                <div class="form-col-100 popup__privacy-policy group-checkbox">
+                                    <input type="checkbox" id="privacy" required class="group-checkbox__input" required>
+                                    <label for="privacy" class="popup__text group-checkbox__label">Explicabo
+                                        consequuntur porro labore animi ratione facilis quae cum</label>
+                                </div>
+                            </div>
+
+                            <button class="btn popup__btn">Submit request</button>
+                        </form>
+                        <a href="#" class="popup__btn-close"><span>x</span></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="teams" class="teams">
+            <div class="container indent">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="group-heading">
+                            <div class="quotes">
+                                <div class="quotes__item"></div>
+                                <div class="quotes__item"></div>
+                            </div>
+                            <h2 class="heading-h2">Meet our <span class="heading-h2_span">team</span></h2>
+                        </div>
+                        <p class="teams__text">
+                            Quidem fugiat ratione fugit, error totam est ad suscipit doloribus minus distinctio, aliquam
+                            nostrum animi delectus ullam illo obcaecati eius expedita ut?
+                        </p>
+                    </div>
+                    <div class="col-9">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tariffs" class="tariffs">
+            <div class="container indent">
+                <div class="group-heading">
+                    <div class="quotes">
+                        <div class="quotes__item"></div>
+                        <div class="quotes__item"></div>
+                    </div>
+                    <h2 class="heading-h2">View our prices</h2>
+                </div>
+                <div class="row">
+                    <div class="col-3 tariff">
+                        <h3 class="tariff__heading">FREE</h3>
+                        <div class="tariff__price">$ 0</div>
+                        <div class="tariff__info">
+                            <p class="tariff__info-item tariff__info-item_active"> 50 participants</p>
+                            <p class="tariff__info-item tariff__info-item_active">Cloud storage 5 GB </p>
+                            <p class="tariff__info-item"> Message boards </p>
+                            <p class="tariff__info-item">Group chat </p>
+                            <p class="tariff__info-item">Mail and calendar </p>
+                            <p class="tariff__info-item">Task scheduler</p>
+                            <p class="tariff__info-item">Telephony Global Select </p>
+                        </div>
+                        <button class="btn">Select tarif</button>
+                    </div>
+                    <div class="col-3 tariff tariff_selected">
+                        <h3 class="tariff__heading tariff__heading_white">STANDART</h3>
+                        <div class="tariff__price tariff__price_white">$ 199</div>
+                        <div class="tariff__info">
+                            <p class="tariff__info-item tariff__info-item_active tariff__info-item_white"> 50
+                                participants </p>
+                            <p class="tariff__info-item tariff__info-item_active tariff__info-item_white"> Cloud storage
+                                5 GB </p>
+                            <p class="tariff__info-item tariff__info-item_active tariff__info-item_white"> Message
+                                boards </p>
+                            <p class="tariff__info-item tariff__info-item_grey">Group chat </p>
+                            <p class="tariff__info-item tariff__info-item_grey"> Mail and calendar </p>
+                            <p class="tariff__info-item tariff__info-item_grey"> Task scheduler </p>
+                            <p class="tariff__info-item tariff__info-item_grey">Telephony Global Select </p>
+                        </div>
+                        <button class="btn btn_white">Select tarif</button>
+                    </div>
+                    <div class="col-3 tariff">
+                        <h3 class="tariff__heading">PRO</h3>
+                        <div class="tariff__price">$ 299</div>
+                        <div class="tariff__info">
+                            <p class="tariff__info-item tariff__info-item_active">50 participants </p>
+                            <p class="tariff__info-item tariff__info-item_active"> Cloud storage 5 GB </p>
+                            <p class="tariff__info-item tariff__info-item_active">Message boards </p>
+                            <p class="tariff__info-item tariff__info-item_active"> Group chat </p>
+                            <p class="tariff__info-item tariff__info-item_active">Mail and calendar </p>
+                            <p class="tariff__info-item"> Task scheduler</p>
+                            <p class="tariff__info-item">Telephony Global Select </p>
+                        </div>
+                        <button class="btn">Select tarif</button>
+                    </div>
+                    <div class="col-3 tariff">
+                        <h3 class="tariff__heading">PREMIUM</h3>
+                        <div class="tariff__price">$ 499</div>
+                        <div class="tariff__info">
+                            <p class="tariff__info-item tariff__info-item_active"> 50 participants</p>
+                            <p class="tariff__info-item tariff__info-item_active"> Cloud storage 5 GB </p>
+                            <p class="tariff__info-item tariff__info-item_active"> Message boards</p>
+                            <p class="tariff__info-item tariff__info-item_active">Group chat </p>
+                            <p class="tariff__info-item tariff__info-item_active"> Mail and calendar </p>
+                            <p class="tariff__info-item tariff__info-item_active"> Task scheduler </p>
+                            <p class="tariff__info-item tariff__info-item_active">Telephony Global Select </p>
+                        </div>
+                        <button class="btn">Select tarif</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="servises">
+            <div class="container indent">
+                <div class="group-heading">
+                    <div class="quotes">
+                        <div class="quotes__item"></div>
+                        <div class="quotes__item"></div>
+                    </div>
+                    <h2 class="heading-h2"> Lorem ipsum
+                        <span class="heading-h2_span">dolor sit </span>
+                        amet consectetur
+                    </h2>
+                </div>
+                <div class="servises__items">
+                    <div class="servises__item">
+                        <h3 class="servises__heading-h3">Doloremque fuga</h3>
+                        <p class="servises__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+                            fuga est eum numquam et quae rerum? Dolorem officiis illum veniam sunt quisquam nostrum
+                            laborum
+                        </p>
+                        <button class="servises__button">
+                            <img src="./img/arrow.svg" alt="Подробнее" loading="lazy">
+                        </button>
+                    </div>
+                    <div class="servises__item">
+                        <h3 class="servises__heading-h3">Lorem ipsum</h3>
+                        <p class="servises__text">Eligendi esse eius ducimus sint beatae maxime similique impedit eaque
+                            est officiis quos, ipsum corrupti vero mollitia consequuntur excepturi odit id quae.
+                        </p>
+                        <button class="servises__button">
+                            <img src="./img/arrow.svg" alt="Подробнее" loading="lazy">
+                        </button>
+                    </div>
+                    <div class="servises__item">
+                        <h3 class="servises__heading-h3">Eligendi esse eius</h3>
+                        <p class="servises__text">
+                            Architecto inventore aut voluptates animi mollitia! Sed animi nemo sunt quas quis laudantium
+                            et similique eaque minima a! Non perferendis cum sunt.
+                        </p>
+                        <button class="servises__button">
+                            <img src="./img/arrow.svg" alt="Подробнее" loading="lazy">
+                        </button>
+                    </div>
+                    <div class="servises__item">
+                        <h3 class="servises__heading-h3">Architecto inventore</h3>
+                        <p class="servises__text">Labore assumenda consequuntur aspernatur pariatur facere quisquam
+                            praesentium obcaecati, cupiditate officiis iusto, laboriosam doloribus autem! Aliquid
+                            beatae, dolor odit consectetur soluta error.
+                        </p>
+                        <button class="servises__button">
+                            <img src="./img/arrow.svg" alt="Подробнее" loading="lazy">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacts" class="contacts">
+            <div class="container indent">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="group-heading">
+                            <div class="quotes">
+                                <div class="quotes__item"></div>
+                                <div class="quotes__item"></div>
+                            </div>
+                            <h2 class="heading-h2">Contact us in any <span class="heading-h2_span">way</span> convenient
+                                <span class="heading-h2_span">for you</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <form class="contacts__form">
+                            <h3 class="contacts__heading-h3">Leave a request</h3>
+                            <div class="row-form contacts__group-inputs">
+                                <div class="form-col-50 contacts__group-input">
+                                    <label for="name-f" class="contacts__label contacts__label-info">Your
+                                        name</label>
+                                    <input id="name-f" type="text" placeholder="Petr" required minlength="2">
+                                </div>
+                                <div class="form-col-50 contacts__group-input">
+                                    <label for="city" class="contacts__label contacts__label-info">Your city</label>
+                                    <select name="city" id="city">
+                                        <option value="">Select city</option>
+                                        <option value="Moscow">Moscow</option>
+                                        <option value="Saint Petersburg">Saint Petersburg</option>
+                                        <option value="Sochi">Sochi</option>
+                                    </select>
+                                </div>
+                                <div class="form-col-100 contacts__group-input">
+                                    <label for="email" class="contacts__label contacts__label-info">Your email</label>
+                                    <input id="email" type="email" placeholder="info@paysaf.com" required>
+                                </div>
+                                <div class="form-col-100 contacts__group-input">
+                                    <label for="phone" class="contacts__label contacts__label-info">Your phone</label>
+                                    <input id="phone" type="tel" placeholder="+7-(987)-654-32-10" required>
+                                </div>
+                                <div class="form-col-100 contacts__privacy-policy group-checkbox">
+                                    <input type="checkbox" id="privacy-c" required class="group-checkbox__input"
+                                        required>
+                                    <label for="privacy-c" class="contacts__label group-checkbox__label">Explicabo
+                                        consequuntur porro labore animi ratione facilis quae cum</label>
+                                </div>
+                            </div>
+                            <div class="contacts__buttons">
+                                <button class="btn btn_white">Submit Request</button>
+                                <input type="reset" value="Reset" class="contacts__input-reset">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-4">
+                        <div class="contacts__info">
+                            <address class="contacts__data">+7-(987)-654-32-10 </address>
+                            <address class="contacts__data">info@paysaf.com</address>
+                            <p class="contacts__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+                                consequuntur porro labore animi ratione facilis quae cum in reiciendis repellendus illo,
+                                quibusdam, eius minima modi nemo rerum. Odio, aperiam labore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__social-networking">
+                <div class="footer__social">
+                    <div class="footer__icon">
+                        <img src="./img/social-instagram.svg" alt="social instagram" loading="lazy">
+                    </div>
+                    Instagram
+                </div>
+                <div class="footer__social">
+                    <div class="footer__icon">
+                        <img src="./img/social-twitter.svg" alt="social twitter" loading="lazy">
+                    </div>
+                    Twitter
+                </div>
+                <div class="footer__social">
+                    <div class="footer__icon">
+                        <img src="./img/social-facebook.svg" alt="social facebook" loading="lazy">
+                    </div>
+                    Facebook
+                </div>
+            </div>
+            <div class="footer__back-home">
+                <a href="#home" class="footer__link">
+                    <div class="footer__icon">
+                        <img src="./img/back-to-home.svg" alt="back to home" loading="lazy">
+                    </div>
+                    Back to home
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
